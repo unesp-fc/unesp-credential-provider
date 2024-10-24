@@ -1,0 +1,6 @@
+spring:
+  config.import: file:./config.yml
+
+logging:
+  level:
+    org.springframework.security.kerberos.web.authentication.SpnegoAuthenticationProcessingFilter: ERROR

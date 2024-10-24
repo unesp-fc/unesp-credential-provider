@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\Credential Providers\{4e6ad959-e34c-4ffb-bb41-f404e9b8f84d}]
+@="UnespCredentialProvider"
+
+[HKEY_CLASSES_ROOT\CLSID\{4e6ad959-e34c-4ffb-bb41-f404e9b8f84d}]
+@="UnespCredentialProvider"
+
+[HKEY_CLASSES_ROOT\CLSID\{4e6ad959-e34c-4ffb-bb41-f404e9b8f84d}\InprocServer32]
+@="UnespCredentialProvider.dll"
+"ThreadingModel"="Apartment"
+

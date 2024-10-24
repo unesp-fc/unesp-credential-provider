@@ -1,0 +1,26 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          central:
+            clientId: my-client-id
+            clientSecret: my-client-secret
+            authorizationGrantType: client_credentials
+            provider: central
+        provider:
+          central:
+            authorization-uri: https://auth.unesp.br/oauth/authorize
+            token-uri: https://auth.unesp.br/oauth/token
+            user-info-uri: https://auth.unesp.br/user
+            user-name-attribute: name
+
+app:
+  ad-domain: EXAMPLE.ORG
+  ad-server: ldap://MYAD.example.org
+  service-principal: HTTP/myad.example.org@EXAMPLE.ORG
+  keytabLocation: credential-provider.keytab
+  krbconfig: krb5.ini
+  ldap-search-base: dc=example,dc=org
+  ldap-search-filter: "(& (sAMAccountName={0}) (sAMAccountType=805306369) )"
+  unesp-uri: https://sistemas.unesp.br
